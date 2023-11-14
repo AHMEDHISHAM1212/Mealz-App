@@ -40,7 +40,7 @@ fun provideLoggingInterceptor(): HttpLoggingInterceptor {
         gsonConverterFactory: GsonConverterFactory
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("www.themealdb.com/api/json/v1/1/")
+            .baseUrl("https://www.themealdb.com/api/json/v1/1/")
             .client(okHttpClient)
             .addConverterFactory(gsonConverterFactory)
             .build()
