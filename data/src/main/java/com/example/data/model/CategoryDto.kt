@@ -24,10 +24,10 @@ data class CategoryDto(
 	fun toCategory():Category{
 
 		return Category(
-			strCategory = categoryName,
-			strCategoryDescription = categoryDescription,
-			idCategory = categoryId,
-			strCategoryThumb = categoryImage
+			name = categoryName,
+			id = categoryId,
+			image = categoryImage,
+			description = categoryDescription
 		)
 	}
 }
